@@ -1,0 +1,73 @@
+.footerContainer {
+    background-color: #1e252b;
+    color: #9ca3af;
+    padding: 50px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #2d3748;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .footerContent {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+.footerLogo {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footerLogo .logoColiving {
+    color: #c3a71f;
+    font-family: serif;
+}
+
+.footerLogo .logoCampus {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.footerText {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #9ca3af;
+    margin: 0;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: #d1d5db;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.footerLinks a:hover {
+    color: #c3a71f;
+}

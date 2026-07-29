@@ -28,15 +28,15 @@
   font-weight: bold;
 }
 
-.logoColiving {
+.navbarLogo .logoColiving {
   font-family: serif;
-  color: #d0b321;
+  color: #9e8726;
 }
 
-.logoCampus {
+.navbarLogo .logoCampus {
   font-family: sans-serif;
   font-weight: normal;
-  color: #1f2937;
+  color: #111827;
 }
 
 .navbarLinks {
