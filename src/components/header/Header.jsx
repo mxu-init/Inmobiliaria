@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header className={`navbarContainer ${scrolled ? "navbarScrolled" : ""}`}>
-      <div className="navbarContent">
+      <section className="navbarContent">
         <div className="navbarLogo">
           <span className="logoColiving">Coliving</span> <span className="logoCampus">Campus</span>
         </div>
@@ -38,7 +38,7 @@ const Header = () => {
             Contactar
           </a>
         </div>
-      </div>
+      </section>
     </header>
   );
 };

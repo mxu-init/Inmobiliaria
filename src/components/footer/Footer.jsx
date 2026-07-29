@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <footer className="footerContainer">
-            <div className="footerContent">
+            <section className="footerContent">
                 <div className="footerLeft">
                     <div className="footerLogo">
                         <span className="logoColiving">Coliving</span>{" "}
@@ -22,7 +22,7 @@ const Footer = () => {
                     <a href="#contacto">Contacto</a>
                 </nav>
 
-            </div>
+            </section>
         </footer>
     );
 };
