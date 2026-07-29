@@ -1,0 +1,85 @@
+.navbarContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  padding: 20px 0;
+}
+
+.navbarScrolled {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+  padding: 12px 0;
+}
+
+.navbarContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarLogo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.logoColiving {
+  font-family: serif;
+  color: #d0b321;
+}
+
+.logoCampus {
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #1f2937;
+}
+
+.navbarLinks {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbarLinks {
+    display: flex;
+    gap: 32px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+  }
+}
+
+.navbarLinks a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.navbarLinks a:hover,
+.navbarLinks a.active {
+  color: #c3a71f;
+}
+
+.navbarLinks a.active {
+  border-bottom: 2px solid #c3a71f;
+  padding-bottom: 4px;
+}
+
+.navbarBtn {
+  background-color: #9e8726;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.navbarBtn:hover {
+  background-color: #d7b718;
+}
