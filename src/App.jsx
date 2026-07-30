@@ -1,5 +1,6 @@
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
+import Apartaments from './components/apartaments/Apartaments';
 
 function App() {
     return (
@@ -11,7 +12,7 @@ function App() {
                 <section id="inicio"></section>
                 <section id="agentes"></section>
                 <section id="nosotros"></section>
-                <section id="pisos"></section>
+                <Apartaments />
                 <section id="contacto"></section>
             </main>
 
