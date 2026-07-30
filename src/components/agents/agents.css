@@ -1,0 +1,84 @@
+.agentes-section {
+  background-color: #fdfbf7; /* Color de fondo general de la vista */
+  padding: 60px 40px;
+  font-family: serif; /* O la tipografía general de tu proyecto */
+  color: #1a1a1a;
+}
+
+.agentes-header {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.agentes-header .subtitulo {
+  color: #d99b3d;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.agentes-header h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.agentes-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Contenedor de las 4 tarjetas en línea adaptable */
+.agentes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* Estilo individual de cada tarjeta */
+.agente-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.agente-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Círculo con las iniciales */
+.agente-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.agente-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.agente-cargo {
+  display: block;
+  color: #d99b3d; /* Color dorado para el cargo */
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.agente-descripcion {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
