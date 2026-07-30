@@ -1,4 +1,5 @@
 import Header from './components/header/header';
+import Agentes from './components/agents/Agentes';
 import Footer from './components/footer/footer';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
             {/* Espacio principal con los IDs de sección preparados */}
             <main style={{ flex: 1, marginTop: '80px' }}>
                 <section id="inicio"></section>
-                <section id="agentes"></section>
+                <section id="Agentes"></section>
                 <section id="nosotros"></section>
                 <section id="pisos"></section>
                 <section id="contacto"></section>
