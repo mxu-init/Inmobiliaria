@@ -1,9 +1,10 @@
+import './style/App.css';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Apartaments from './components/apartaments/Apartaments';
 import Welcome from './components/welcome/Welcome';
 import History from './components/history/History';
-import './style/App.css';
+
 
 function App() {
     return (

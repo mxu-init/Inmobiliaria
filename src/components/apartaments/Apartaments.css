@@ -1,3 +1,7 @@
+.apartments {
+    background-color: var(--color-paper-alt);
+}
+
 .apartamentsContainer {
     padding: 40px;
 }
