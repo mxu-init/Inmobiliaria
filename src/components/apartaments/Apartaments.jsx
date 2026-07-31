@@ -32,7 +32,7 @@ function Card(props) {
 
 function Apartaments() {
     return (
-        <div className="apartamentsContainer">
+        <div className="apartamentsContainer" id="apartments">
             <h2 className="apartamentsLabel">Nuestra oferta</h2>
             <p className="apartamentsSubtitle">
                 Descubre nuestros hermosos apartamentos en la ciudad.

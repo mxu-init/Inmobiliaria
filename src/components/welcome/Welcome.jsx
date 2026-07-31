@@ -14,7 +14,7 @@ function Welcome() {
           facultad y con la mejor compañía. Sin líos, sin sorpresas.
         </p>
         <div className="welcomeActions">
-          <a href="#pisos" className="btn btnPrimary">Ver pisos disponibles</a>
+          <a href="#apartments" className="btn btnPrimary">Ver pisos disponibles</a>
           <a href="#nosotros" className="btn btnSecondary">Conócenos</a>
         </div>
       </div>
