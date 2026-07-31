@@ -14,7 +14,7 @@ function History() {
         <p className="kicker">Sobre nosotros</p>
         <h2>Nuestra historia</h2>
         <p className="historyText">
-          Desde 2015, en PisoU nos dedicamos a conectar a estudiantes con
+          Desde 2015, en Coliving Campus nos dedicamos a conectar a estudiantes con
           pisos compartidos de calidad en Salamanca. Lo que empezó como un
           pequeño proyecto entre amigos que sabían lo difícil que es
           encontrar piso siendo estudiante, se ha convertido en la
