@@ -1,4 +1,3 @@
-import React from "react";
 import "./Apartaments.css";
 
 const images = import.meta.glob("../../assets/img/*.png", {
