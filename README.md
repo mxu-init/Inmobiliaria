@@ -1,6 +1,8 @@
 # 🏡 Proyecto Inmobiliaria
 
 > Aplicación web moderna desarrollada con **React** para la gestión, exploración y visualización de propiedades inmobiliarias. Este proyecto es el resultado del trabajo colaborativo de nuestro equipo de desarrollo.
+>
+> <img width="1898" height="875" alt="coliving_welcome" src="https://github.com/user-attachments/assets/3f230f62-bce2-4334-b779-54ea9b05d7f9" />
 
 ---
 
