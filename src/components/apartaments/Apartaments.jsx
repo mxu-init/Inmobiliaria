@@ -1,7 +1,7 @@
 import React from "react";
 import "./Apartaments.css";
 
-const images = import.meta.glob("../../img/*.png", {
+const images = import.meta.glob("../../assets/img/*.png", {
     eager: true,
     import: "default",
 });
@@ -12,10 +12,10 @@ function Card(props) {
             <div className="cardImage">
                 <img
                     className="cardImg"
-                    src={images[`../../img/${props.image}.png`]}
+                    src={images[`../../assets/img/${props.image}.png`]}
                     alt={props.title}
                 />
-                <span className="cardPrice">{props.price}</span>
+                <span className="cardPrice">{props.price} </span>
             </div>
             <div className="cardInfo">
                 <p className="cardArea">{props.area}</p>
