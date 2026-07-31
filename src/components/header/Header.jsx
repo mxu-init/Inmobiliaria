@@ -29,8 +29,8 @@ const Header = () => {
             Inicio
           </a>
           <a href="#agentes">Agentes</a>
-          <a href="#nosotros">Nosotros</a>
-          <a href="#pisos">Pisos</a>
+          <a href="#aboutUs">Nosotros</a>
+          <a href="#apartments">Pisos</a>
         </nav>
 
         <div>
