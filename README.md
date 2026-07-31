@@ -21,7 +21,7 @@ El proyecto ha sido desarrollado por los siguientes integrantes:
 | Nombre / Usuario | Perfil de GitHub |
 | :--- | :--- |
 | **Cristina Rodríguez** | [cristinarodriguezl-dev](https://github.com/cristinarodriguezl-dev) |
-| **mxu-init** | [mxu-init](https://github.com/mxu-init) |
+| **Mauricio Rodríguez** | [mxu-init](https://github.com/mxu-init) |
 | **Jhojann Sossa** | [jhojannsossa](https://github.com/jhojannsossa) |
 | **Simón López** | [simonlopez25](https://github.com/simonlopez25) |
 
