@@ -3,38 +3,51 @@ import "./Header.css";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [activeLink, setActiveLink] = useState("#welcome");
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navLinks = [
+    { href: "#welcome", label: "Inicio" },
+    { href: "#apartments", label: "Pisos" },
+    { href: "#aboutUs", label: "Historia" },
+    { href: "#agents", label: "Agentes" },
+  ];
+
   return (
     <header className={`navbarContainer ${scrolled ? "navbarScrolled" : ""}`}>
       <section className="navbarContent">
         <div className="navbarLogo">
-          <span className="logoColiving">Coliving</span> <span className="logoCampus">Campus</span>
+          <span className="logoColiving">Coliving</span>{" "}
+          <span className="logoCampus">Campus</span>
         </div>
 
         <nav className="navbarLinks">
-          <a href="#welcome" className="active">
-            Inicio
-          </a>
-          <a href="#agents">Agentes</a>
-          <a href="#aboutUs">Nosotros</a>
-          <a href="#apartments">Pisos</a>
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className={activeLink === link.href ? "active" : ""}
+              onClick={() => setActiveLink(link.href)}
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
 
         <div>
-          <a href="#contact" className="navbarBtn">
+          <a
+            href="#contact"
+            className={`navbarBtn ${activeLink === "#contact" ? "active" : ""}`}
+            onClick={() => setActiveLink("#contact")}
+          >
             Contactar
           </a>
         </div>

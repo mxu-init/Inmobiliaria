@@ -50,13 +50,16 @@
     font-size: 0.875rem;
     font-weight: 500;
     color: #374151;
+    align-items: center;
   }
 }
 
 .navbarLinks a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
 }
 
 .navbarLinks a:hover,
@@ -65,8 +68,7 @@
 }
 
 .navbarLinks a.active {
-  border-bottom: 2px solid #c3a71f;
-  padding-bottom: 4px;
+  border-bottom-color: #c3a71f;
 }
 
 .navbarBtn {
@@ -77,9 +79,16 @@
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
 }
 
 .navbarBtn:hover {
   background-color: #d7b718;
+}
+
+
+.navbarBtn.active {
+  background-color: #111827;
+  color: #ffffff;
 }
