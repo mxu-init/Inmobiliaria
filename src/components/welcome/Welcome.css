@@ -1,0 +1,136 @@
+.welcome {
+  text-align: left;
+  padding: 100px 24px;
+  background-image: url('../../img/colivingWelcome02.webp');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.welcomeContainer {
+  max-width: 480px;
+  margin-left: 6%;
+  margin-right: auto;
+}
+
+.welcome .kicker {
+  color: #d69727;
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.welcome .kicker::before {
+  content: "—";
+  color: #d69727;
+  font-weight: bold;
+}
+
+.welcomeBrand {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #2b303a;
+  margin: 0 0 20px 0;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+.welcomeBrand span {
+  color: #d69727;
+}
+
+.welcomeSubtitle {
+  color: #2b303a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.welcomeText {
+  color: #555d6b;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 36px;
+  max-width: 440px;
+}
+
+.welcomeActions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.welcome .btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome .btnPrimary {
+  background-color: #d69727;
+  color: #ffffff;
+  border: 1px solid #d69727;
+  box-shadow: 0 4px 12px rgba(214, 151, 39, 0.25);
+}
+
+.welcome .btnPrimary:hover {
+  background-color: #be821a;
+  border-color: #be821a;
+  transform: translateY(-2px);
+}
+
+.welcome .btnSecondary {
+  background-color: rgba(240, 237, 232, 0.8);
+  color: #2b303a;
+  border: 1px solid #2b303a;
+}
+
+.welcome .btnSecondary:hover {
+  background-color: #2b303a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    padding: 80px 20px;
+    background-position: center;
+  }
+  
+  .welcomeContainer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .welcome .kicker {
+    justify-content: center;
+  }
+
+  .welcomeBrand {
+    font-size: 2.8rem;
+  }
+
+  .welcomeSubtitle {
+    font-size: 1.3rem;
+  }
+
+  .welcomeActions {
+    justify-content: center;
+  }
+}

@@ -1,6 +1,7 @@
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Apartaments from './components/apartaments/Apartaments';
+import Welcome from './components/welcome/Welcome';
 
 function App() {
     return (
@@ -9,7 +10,7 @@ function App() {
 
             {/* Espacio principal con los IDs de sección preparados */}
             <main style={{ flex: 1, marginTop: '80px' }}>
-                <section id="inicio"></section>
+                <Welcome />
                 <section id="agentes"></section>
                 <section id="nosotros"></section>
                 <Apartaments />
