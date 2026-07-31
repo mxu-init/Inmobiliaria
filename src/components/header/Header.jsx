@@ -28,9 +28,11 @@ const Header = () => {
           <a href="#welcome" className="active">
             Inicio
           </a>
-          <a href="#agents">Agentes</a>
-          <a href="#aboutUs">Nosotros</a>
           <a href="#apartments">Pisos</a>
+          <a href="#aboutUs">Historia</a>
+          <a href="#agents">Agentes</a>
+          
+          
         </nav>
 
         <div>
