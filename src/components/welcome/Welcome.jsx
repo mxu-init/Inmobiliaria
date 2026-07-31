@@ -2,7 +2,7 @@ import "./Welcome.css";
 
 function Welcome() {
   return (
-    <section id="inicio" className="welcome">
+    <section id="welcome" className="welcome">
       <div className="welcomeContainer">
         <p className="kicker">Bienvenido a</p>
         <h1 className="welcomeBrand">

@@ -25,16 +25,16 @@ const Header = () => {
         </div>
 
         <nav className="navbarLinks">
-          <a href="#inicio" className="active">
+          <a href="#welcome" className="active">
             Inicio
           </a>
-          <a href="#agentes">Agentes</a>
+          <a href="#agents">Agentes</a>
           <a href="#aboutUs">Nosotros</a>
           <a href="#apartments">Pisos</a>
         </nav>
 
         <div>
-          <a href="#contacto" className="navbarBtn">
+          <a href="#contact" className="navbarBtn">
             Contactar
           </a>
         </div>
