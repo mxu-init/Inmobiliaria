@@ -1,6 +1,6 @@
 import './style/App.css';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 import Apartaments from './components/apartaments/Apartaments';
 import Welcome from './components/welcome/Welcome';
 import History from './components/history/History';
@@ -11,7 +11,6 @@ function App() {
         <div className="app" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             <Header />
 
-            {/* Espacio principal con los IDs de sección preparados */}
             <main style={{ flex: 1, marginTop: '80px' }}>
                 <Welcome />
                 <Apartaments />
