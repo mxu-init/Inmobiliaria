@@ -1,0 +1,134 @@
+/* ===== Tipografía ===== */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,500&display=swap');
+
+/* ===== Variables de diseño ===== */
+:root {
+  --color-stone: #C08829;
+  --color-stone-dark: #96691E;
+  --color-dusk: #232A42;
+  --color-dusk-light: #3A4468;
+  --color-garnet: #7A3B36;
+  --color-paper: #F6F5F1;
+  --color-paper-alt: #EFEBE2;
+  --color-white: #FFFFFF;
+  --color-ink: #2B2620;
+  --color-ink-light: #756F63;
+  --color-ink-muted: #C7C2B4;
+  --color-line: #E4DFD3;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(35, 42, 66, 0.10);
+  --max-width: 1160px;
+}
+
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-dusk);
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ===== Utilidades reutilizables ===== */
+.sectionContainer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.kicker {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-stone-dark);
+  font-size: 1.05rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.kicker::after {
+  content: '';
+  width: 36px;
+  height: 1px;
+  background-color: var(--color-stone);
+}
+
+.sectionSubtitle {
+  color: var(--color-ink-light);
+  max-width: 560px;
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btnPrimary {
+  background-color: var(--color-stone);
+  color: var(--color-white);
+}
+
+.btnPrimary:hover {
+  background-color: var(--color-stone-dark);
+  box-shadow: 0 8px 20px rgba(192, 136, 41, 0.35);
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: var(--color-dusk);
+  border: 2px solid var(--color-dusk);
+}
+
+.btnSmall {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+}

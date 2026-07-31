@@ -15,7 +15,7 @@ function Welcome() {
         </p>
         <div className="welcomeActions">
           <a href="#apartments" className="btn btnPrimary">Ver pisos disponibles</a>
-          <a href="#nosotros" className="btn btnSecondary">Conócenos</a>
+          <a href="#aboutUs" className="btn btnSecondary">Conócenos</a>
         </div>
       </div>
     </section>
