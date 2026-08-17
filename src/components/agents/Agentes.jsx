@@ -1,5 +1,5 @@
 import React from 'react';
-import { agentes } from './agentesData'; // O puedes declararlo arriba del componente
+import { agentes } from './agentesData'; 
 import './Agentes.css';
 
 const Agentes = () => {

@@ -5,7 +5,7 @@ export const agentes = [
     nombre: "Cristina",
     cargo: "Agente Inmobiliaria",
     descripcion: "Experta en encontrar el piso perfecto para cada estudiante.",
-    colorCirculo: "#d99b3d" // Tono ocre/dorado
+    colorCirculo: "#d99b3d" 
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const agentes = [
     nombre: "Mauricio",
     cargo: "Especialista en Alquileres",
     descripcion: "Te acompaña en todo el proceso, desde la visita hasta las llaves.",
-    colorCirculo: "#1b1f3b" // Tono azul oscuro/marino
+    colorCirculo: "#1b1f3b" 
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const agentes = [
     nombre: "Simon",
     cargo: "Atención al Estudiante",
     descripcion: "Siempre disponible para resolver tus dudas.",
-    colorCirculo: "#6b3e4e" // Tono vino/granate
+    colorCirculo: "#6b3e4e" 
   },
   {
     id: 4,
@@ -29,6 +29,6 @@ export const agentes = [
     nombre: "Jhojann",
     cargo: "Gestor de Propiedades",
     descripcion: "Se encarga de que cada piso esté listo para recibirte.",
-    colorCirculo: "#a0520d" // Tono marrón/óxido
+    colorCirculo: "#a0520d" 
   }
 ];
