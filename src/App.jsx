@@ -5,6 +5,7 @@ import Footer from './components/footer/Footer';
 import Apartaments from './components/apartaments/Apartaments';
 import Welcome from './components/welcome/Welcome';
 import History from './components/history/History';
+import Agentes from './components/agents/Agentes';
 // PENDIENTE DE COMPONENTES AGENTES Y RECETAS, SE DEBE PONER TANTO EN IMPORT COMO EN ROUTES
 
 
@@ -18,6 +19,7 @@ function App() {
                         <Route path="/" element={<Welcome />} />
                         <Route path="/pisos" element={<Apartaments />} />
                         <Route path="/historia" element={<History />} />
+                        <Route path="/agentes" element={<Agentes />} />
                         // PENDIENTE DE COMPONENTES AGENTES Y RECETAS, SE DEBE PONER TANTO EN IMPORT COMO EN ROUTES
                         {/* <Route path="/agentes" element={<Agents />} /> */}
                         {/* <Route path="/recetas" element={<Recetas />} /> */}
