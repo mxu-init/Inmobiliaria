@@ -4,7 +4,7 @@ import './Agentes.css';
 
 const Agentes = () => {
   return (
-    <section className="agentes-section">
+    <section id='Agents' className="agentes-section">
       <div className="agentes-header">
         <span className="subtitulo">Nuesto equipo --</span>
         <h2>Conoce a nuestros agentes</h2>
