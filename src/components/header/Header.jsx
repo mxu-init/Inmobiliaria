@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";import "./Header.css";
+import { useState, useEffect } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [activeLink, setActiveLink] = useState("#welcome");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,41 +15,44 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { href: "#welcome", label: "Inicio" },
-    { href: "#apartments", label: "Pisos" },
-    { href: "#aboutUs", label: "Historia" },
-    { href: "#agents", label: "Agentes" },
+    { to: "/", label: "Inicio" },
+    { to: "/pisos", label: "Pisos" },
+    { to: "/historia", label: "Historia" },
+    { to: "/agentes", label: "Agentes" },
+    { to: "/recetas", label: "Recetas" },
   ];
 
   return (
     <header className={`navbarContainer ${scrolled ? "navbarScrolled" : ""}`}>
       <section className="navbarContent">
         <div className="navbarLogo">
-          <span className="logoColiving">Coliving</span>{" "}
-          <span className="logoCampus">Campus</span>
+          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            <span className="logoColiving">Coliving</span>{" "}
+            <span className="logoCampus">Campus</span>
+          </Link>
         </div>
 
         <nav className="navbarLinks">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={activeLink === link.href ? "active" : ""}
-              onClick={() => setActiveLink(link.href)}
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) => (isActive ? "active" : "")}
             >
               {link.label}
-            </a>
+            </NavLink>
           ))}
         </nav>
 
         <div>
-          <a
-            href="#contact"
-            className={`navbarBtn ${activeLink === "#contact" ? "active" : ""}`}
-            onClick={() => setActiveLink("#contact")}
+          <NavLink
+            to="/contacto"
+            className={({ isActive }) =>
+              `navbarBtn ${isActive ? "active" : ""}`
+            }
           >
             Contactar
-          </a>
+          </NavLink>
         </div>
       </section>
     </header>
