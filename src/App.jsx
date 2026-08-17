@@ -6,7 +6,7 @@ import Apartaments from './pages/apartaments/Apartaments';
 import Welcome from './pages/welcome/Welcome';
 import History from './pages/history/History';
 import Agentes from './pages/agents/Agentes';
-// PENDIENTE DE COMPONENTES AGENTES Y RECETAS, SE DEBE PONER TANTO EN IMPORT COMO EN ROUTES
+// PENDIENTE DE PÁGINA RECETAS, SE DEBE PONER TANTO EN IMPORT COMO EN ROUTES
 
 
 function App() {
