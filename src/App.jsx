@@ -1,21 +1,24 @@
-import Header from './components/header/header';
+import './style/App.css';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Apartaments from './components/apartaments/Apartaments';
+import Welcome from './components/welcome/Welcome';
+import History from './components/history/History';
 import Agentes from './components/agents/Agentes';
-import Footer from './components/footer/footer';
+
 
 function App() {
     return (
         <div className="app" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             <Header />
-
-            {/* Espacio principal con los IDs de sección preparados */}
             <main style={{ flex: 1, marginTop: '80px' }}>
-                <section id="inicio"></section>
-                <section id="Agentes"><Agentes /></section>
-                <section id="nosotros"></section>
-                <section id="pisos"></section>
-                <section id="contacto"></section>
+                <Welcome />
+                <Apartaments />
+                <History />
+                <Agentes />
+                <section id="agents"></section>
+                <section id="contact"></section>
             </main>
-
             <Footer />
         </div>
     );

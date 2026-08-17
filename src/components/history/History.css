@@ -1,0 +1,33 @@
+.historyText {
+  max-width: 760px;
+  color: var(--color-ink-light);
+  font-size: 1.05rem;
+  margin-bottom: 56px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  text-align: center;
+}
+
+.statItem {
+  background-color: var(--color-white);
+  border-radius: var(--radius);
+  padding: 28px 16px;
+  box-shadow: var(--shadow);
+}
+
+.statValue {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-stone);
+}
+
+.statLabel {
+  color: var(--color-ink-light);
+  font-size: 0.9rem;
+}

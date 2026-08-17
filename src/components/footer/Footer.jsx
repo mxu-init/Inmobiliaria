@@ -16,10 +16,10 @@ const Footer = () => {
                 </div>
 
                 <nav className="footerLinks">
-                    <a href="#privacidad">Privacidad</a>
-                    <a href="#terminos">Términos</a>
+                    <a href="#privacy">Privacidad</a>
+                    <a href="#terms">Términos</a>
                     <a href="#cookies">Cookies</a>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#contact">Contacto</a>
                 </nav>
 
             </section>
