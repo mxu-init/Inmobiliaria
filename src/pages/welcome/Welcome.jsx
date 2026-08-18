@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Welcome.css";
 
 function Welcome() {
@@ -14,8 +15,12 @@ function Welcome() {
           facultad y con la mejor compañía. Sin líos, sin sorpresas.
         </p>
         <div className="welcomeActions">
-          <a href="#apartments" className="btn btnPrimary">Ver pisos disponibles</a>
-          <a href="#aboutUs" className="btn btnSecondary">Conócenos</a>
+          <Link to="/pisos" className="btn btnPrimary">
+            Ver pisos disponibles
+          </Link>
+          <Link to="/historia" className="btn btnSecondary">
+            Conócenos
+          </Link>
         </div>
       </div>
     </section>
