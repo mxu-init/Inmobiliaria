@@ -12,9 +12,9 @@ import Agentes from './pages/agents/Agentes';
 function App() {
     return (
         
-            <div className="app" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+            <div className="app">
                 <Header />
-                <main style={{ flex: 1, marginTop: '80px' }}>
+                <main className="mainApp">
                     <Routes>
                         <Route path="/" element={<Welcome />} />
                         <Route path="/pisos" element={<Apartaments />} />

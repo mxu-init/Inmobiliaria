@@ -1,30 +1,27 @@
-/* ===== Tipografía ===== */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,500&display=swap");
 
-/* ===== Variables de diseño ===== */
 :root {
-  --color-stone: #C08829;
-  --color-stone-dark: #96691E;
-  --color-dusk: #232A42;
-  --color-dusk-light: #3A4468;
-  --color-garnet: #7A3B36;
-  --color-paper: #F6F5F1;
-  --color-paper-alt: #EFEBE2;
-  --color-white: #FFFFFF;
-  --color-ink: #2B2620;
-  --color-ink-light: #756F63;
-  --color-ink-muted: #C7C2B4;
-  --color-line: #E4DFD3;
+  --color-stone: #c08829;
+  --color-stone-dark: #96691e;
+  --color-dusk: #232a42;
+  --color-dusk-light: #3a4468;
+  --color-garnet: #7a3b36;
+  --color-paper: #f6f5f1;
+  --color-paper-alt: #efebe2;
+  --color-white: #ffffff;
+  --color-ink: #2b2620;
+  --color-ink-light: #756f63;
+  --color-ink-muted: #c7c2b4;
+  --color-line: #e4dfd3;
 
-  --font-display: 'Fraunces', serif;
-  --font-body: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: "Fraunces", serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --radius: 12px;
-  --shadow: 0 4px 20px rgba(35, 42, 66, 0.10);
+  --shadow: 0 4px 20px rgba(35, 42, 66, 0.1);
   --max-width: 1160px;
 }
 
-/* ===== Reset básico ===== */
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +39,10 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-display);
   font-weight: 600;
   color: var(--color-dusk);
@@ -63,7 +63,6 @@ section {
   scroll-margin-top: 80px;
 }
 
-/* ===== Utilidades reutilizables ===== */
 .sectionContainer {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -83,7 +82,7 @@ section {
 }
 
 .kicker::after {
-  content: '';
+  content: "";
   width: 36px;
   height: 1px;
   background-color: var(--color-stone);
@@ -105,7 +104,10 @@ section {
   font-family: var(--font-body);
   border: none;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .btn:hover {
@@ -131,4 +133,15 @@ section {
 .btnSmall {
   padding: 8px 18px;
   font-size: 0.85rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainApp {
+  flex: 1;
+  margin-top: 80px;
 }
