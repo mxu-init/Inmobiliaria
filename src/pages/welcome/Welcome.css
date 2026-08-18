@@ -1,19 +1,26 @@
 .welcome {
   text-align: left;
-  padding: 100px 24px;
-  background-image: url('../../assets/img/colivingWelcome02.webp');
+  padding: 80px 24px;
+  background-image: url("../../assets/img/colivingWelcome02.webp");
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
 }
 
+.welcomeWrapper {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .welcomeContainer {
-  max-width: 480px;
-  margin-left: 6%;
-  margin-right: auto;
+  max-width: 520px;
+  width: 100%;
+  margin-left: 2%;
 }
 
 .welcome .kicker {
@@ -33,11 +40,11 @@
 }
 
 .welcomeBrand {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 3.8rem;
   font-weight: 700;
   color: #2b303a;
-  margin: 0 0 20px 0;
+  margin: 0 0 16px 0;
   line-height: 1.05;
   letter-spacing: -0.5px;
 }
@@ -48,7 +55,7 @@
 
 .welcomeSubtitle {
   color: #2b303a;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 16px;
   line-height: 1.3;
@@ -58,7 +65,7 @@
   color: #555d6b;
   font-size: 1.05rem;
   line-height: 1.6;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
   max-width: 440px;
 }
 
@@ -67,6 +74,7 @@
   gap: 16px;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 35px;
 }
 
 .welcome .btn {
@@ -90,14 +98,13 @@
 
 .welcome .btnPrimary:hover {
   background-color: #be821a;
-  border-color: #be821a;
   transform: translateY(-2px);
 }
 
 .welcome .btnSecondary {
-  background-color: rgba(240, 237, 232, 0.8);
+  background-color: transparent;
   color: #2b303a;
-  border: 1px solid #2b303a;
+  border: 2px solid #2b303a;
 }
 
 .welcome .btnSecondary:hover {
@@ -106,31 +113,75 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
+.welcomeFeaturedInline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.featuredInlineTitle {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #d69727;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.featuredInlineCard {
+  width: 100%;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.featuredInlineCard .card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+@media (max-width: 968px) {
   .welcome {
-    padding: 80px 20px;
+    padding: 60px 16px;
     background-position: center;
   }
-  
+
   .welcomeContainer {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .welcome .kicker {
     justify-content: center;
   }
 
+  .welcomeActions {
+    justify-content: center;
+  }
+
+  .welcomeFeaturedInline {
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
   .welcomeBrand {
     font-size: 2.8rem;
   }
 
   .welcomeSubtitle {
-    font-size: 1.3rem;
-  }
-
-  .welcomeActions {
-    justify-content: center;
+    font-size: 1.2rem;
   }
 }
