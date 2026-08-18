@@ -1,0 +1,132 @@
+.contactWelcome {
+  text-align: left;
+  padding: 100px 24px;
+  background-image: url("../../assets/img/colivingWelcome02.webp");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.contactContainer {
+  max-width: 480px;
+  margin-left: 6%;
+  margin-right: auto;
+  width: 100%;
+}
+
+.contactWelcome .contactKicker {
+  font-family: Georgia, "Times New Roman", serif !important;
+  color: #d69727;
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.contactWelcome .contactKicker::before {
+  content: "—";
+  color: #d69727;
+  font-weight: bold;
+}
+
+.contactWelcome .contactKicker::after {
+  content: "—";
+  color: #d69727;
+  font-weight: bold;
+}
+
+.contactTitle {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #2b303a;
+  margin: 0 0 20px 0;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+.contactTitle span {
+  color: #d69727;
+}
+
+.contactSubtitle {
+  color: #2b303a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.contactDescription {
+  color: #555d6b;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 36px;
+  max-width: 440px;
+}
+
+.contactInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contactInfoItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #2b303a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.contactInfoItem:hover {
+  color: #d69727;
+}
+
+.contactIcon {
+  color: #d69727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactIcon svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactWelcome {
+    padding: 80px 20px;
+    background-position: center;
+  }
+
+  .contactContainer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .contactWelcome .contactKicker {
+    justify-content: center;
+  }
+
+  .contactTitle {
+    font-size: 2.8rem;
+  }
+
+  .contactSubtitle {
+    font-size: 1.3rem;
+  }
+}
