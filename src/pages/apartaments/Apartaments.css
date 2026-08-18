@@ -6,10 +6,11 @@
     padding: 40px;
 }
 
-.cardsList {
+.apartmentsGrid {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {

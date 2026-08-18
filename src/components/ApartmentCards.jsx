@@ -5,7 +5,7 @@ const images = import.meta.glob("../assets/img/*.png", {
     import: "default",
 });
 
-function Card(props) {
+function ApartmentCard(props) {
     return (
         <div className="card">
             <div className="cardImage">
@@ -29,4 +29,4 @@ function Card(props) {
     );
 }
 
-export default Card;
+export default ApartmentCard;
