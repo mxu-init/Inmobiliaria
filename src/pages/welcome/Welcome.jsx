@@ -40,7 +40,6 @@ function Welcome() {
   useEffect(() => {
     const interval = setInterval(() => {
       setFade(false);
-
       setTimeout(() => {
         setCurrentIndex(
           (prevIndex) => (prevIndex + 1) % featuredApartments.length,
@@ -70,32 +69,36 @@ function Welcome() {
             facultad y con la mejor compañía. Sin líos, sin sorpresas.
           </p>
 
-          <div className="welcomeActions">
-            <Link to="/pisos" className="btn btnPrimary">
-              Ver pisos disponibles
-            </Link>
-            <Link to="/historia" className="btn btnSecondary">
-              Conócenos
-            </Link>
-          </div>
+          <div className="welcomeCompactBox">
+            <div className="welcomeFeaturedBlock">
+              <span className="featuredBlockTitle">Pisos destacados</span>
+              <div
+                className={`featuredCardWrapper ${fade ? "fadeIn" : "fadeOut"}`}
+              >
+                <Card
+                  image={currentApartment.image}
+                  price={currentApartment.price}
+                  area={currentApartment.area}
+                  title={currentApartment.title}
+                  rooms={currentApartment.rooms}
+                  bathrooms={currentApartment.bathrooms}
+                  extra={currentApartment.extra}
+                />
+              </div>
+            </div>
 
-          <div className="welcomeFeaturedInline">
-            <p className="featuredInlineTitle">Pisos destacados</p>
-            <div
-              className={`featuredInlineCard ${fade ? "fadeIn" : "fadeOut"}`}
-            >
-              <Card
-                image={currentApartment.image}
-                price={currentApartment.price}
-                area={currentApartment.area}
-                title={currentApartment.title}
-                rooms={currentApartment.rooms}
-                bathrooms={currentApartment.bathrooms}
-                extra={currentApartment.extra}
-              />
+            <div className="welcomeActionsPanel">
+              <Link to="/pisos" className="btn btnPrimary">
+                Ver pisos disponibles
+              </Link>
+              <Link to="/historia" className="btn btnSecondary">
+                Conócenos
+              </Link>
             </div>
           </div>
         </div>
+
+        <div className="welcomeVisualPlaceholder"></div>
       </div>
     </section>
   );

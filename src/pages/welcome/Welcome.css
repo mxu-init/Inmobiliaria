@@ -1,6 +1,6 @@
 .welcome {
   text-align: left;
-  padding: 80px 24px;
+  padding: 60px 24px;
   background-image: url("../../assets/img/colivingWelcome02.webp");
   background-size: cover;
   background-position: center right;
@@ -14,6 +14,10 @@
   max-width: 1350px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
   padding: 0 20px;
 }
 
@@ -21,6 +25,7 @@
   max-width: 520px;
   width: 100%;
   margin-left: 2%;
+  z-index: 2;
 }
 
 .welcome .kicker {
@@ -41,7 +46,7 @@
 
 .welcomeBrand {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: #2b303a;
   margin: 0 0 16px 0;
@@ -65,22 +70,62 @@
   color: #555d6b;
   font-size: 1.05rem;
   line-height: 1.6;
-  margin-bottom: 30px;
-  max-width: 440px;
+  margin-bottom: 25px;
+  max-width: 460px;
 }
 
-.welcomeActions {
+.welcomeCompactBox {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 18px;
+  background: rgba(255, 253, 248, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(214, 151, 39, 0.2);
+  box-shadow: 0 10px 30px rgba(43, 48, 58, 0.05);
+  max-width: 440px;
+  width: 100%;
+}
+
+.welcomeFeaturedBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.featuredBlockTitle {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #d69727;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.featuredCardWrapper {
+  width: 100%;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.featuredCardWrapper .card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.welcomeActionsPanel {
+  display: flex;
+  gap: 12px;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 35px;
+  width: 100%;
 }
 
-.welcome .btn {
-  padding: 12px 28px;
+.welcomeActionsPanel .btn {
+  padding: 10px 22px;
   border-radius: 30px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -89,55 +134,32 @@
   justify-content: center;
 }
 
-.welcome .btnPrimary {
+.welcomeActionsPanel .btnPrimary {
   background-color: #d69727;
   color: #ffffff;
   border: 1px solid #d69727;
   box-shadow: 0 4px 12px rgba(214, 151, 39, 0.25);
 }
 
-.welcome .btnPrimary:hover {
+.welcomeActionsPanel .btnPrimary:hover {
   background-color: #be821a;
   transform: translateY(-2px);
 }
 
-.welcome .btnSecondary {
+.welcomeActionsPanel .btnSecondary {
   background-color: transparent;
   color: #2b303a;
   border: 2px solid #2b303a;
 }
 
-.welcome .btnSecondary:hover {
+.welcomeActionsPanel .btnSecondary:hover {
   background-color: #2b303a;
   color: #ffffff;
   transform: translateY(-2px);
 }
 
-.welcomeFeaturedInline {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  max-width: 420px;
-}
-
-.featuredInlineTitle {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #d69727;
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin: 0;
-  letter-spacing: 0.5px;
-}
-
-.featuredInlineCard {
-  width: 100%;
-  transition: opacity 0.4s ease-in-out;
-}
-
-.featuredInlineCard .card {
-  width: 100%;
-  max-width: 100%;
+.welcomeVisualPlaceholder {
+  flex: 1;
 }
 
 .fadeIn {
@@ -148,15 +170,14 @@
   opacity: 0;
 }
 
-@media (max-width: 968px) {
-  .welcome {
-    padding: 60px 16px;
-    background-position: center;
+@media (max-width: 1024px) {
+  .welcomeWrapper {
+    flex-direction: column;
+    text-align: center;
   }
 
   .welcomeContainer {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -167,21 +188,32 @@
     justify-content: center;
   }
 
-  .welcomeActions {
+  .welcomeCompactBox {
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .welcomeActionsPanel {
     justify-content: center;
   }
 
-  .welcomeFeaturedInline {
-    align-items: center;
+  .welcomeVisualPlaceholder {
+    display: none;
   }
 }
 
 @media (max-width: 500px) {
   .welcomeBrand {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
-
   .welcomeSubtitle {
     font-size: 1.2rem;
+  }
+  .welcomeActionsPanel {
+    flex-direction: column;
+    width: 100%;
+  }
+  .welcomeActionsPanel .btn {
+    width: 100%;
   }
 }
