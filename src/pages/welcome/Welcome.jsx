@@ -1,37 +1,8 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Card from "../../components/ApartmentCards";
+import apartments from "../../data/apartmentsData.js";
 import "./Welcome.css";
-
-const featuredApartments = [
-  {
-    image: "PlazaMayor",
-    price: "450€ / mes",
-    area: "Plaza Mayor",
-    title: "Habitación doble con balcón",
-    rooms: 4,
-    bathrooms: 2,
-    extra: "Internet incluido",
-  },
-  {
-    image: "Retiro",
-    price: "380€ / mes",
-    area: "Retiro",
-    title: "Habitación doble con estilo mediterráneo",
-    rooms: 5,
-    bathrooms: 3,
-    extra: "Amueblado",
-  },
-  {
-    image: "BarrioSalamanca",
-    price: "520€ / mes",
-    area: "Barrio Salamanca",
-    title: "Habitación individual con baño en suite",
-    rooms: 3,
-    bathrooms: 2,
-    extra: "Aire acondicionado",
-  },
-];
 
 function Welcome() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,7 +13,7 @@ function Welcome() {
       setFade(false);
       setTimeout(() => {
         setCurrentIndex(
-          (prevIndex) => (prevIndex + 1) % featuredApartments.length,
+          (previousIndex) => (previousIndex + 1) % apartments.length,
         );
         setFade(true);
       }, 400);
@@ -51,7 +22,7 @@ function Welcome() {
     return () => clearInterval(interval);
   }, []);
 
-  const currentApartment = featuredApartments[currentIndex];
+  const currentApartment = apartments[currentIndex];
 
   return (
     <section id="welcome" className="welcome">
@@ -75,15 +46,7 @@ function Welcome() {
               <div
                 className={`featuredCardWrapper ${fade ? "fadeIn" : "fadeOut"}`}
               >
-                <Card
-                  image={currentApartment.image}
-                  price={currentApartment.price}
-                  area={currentApartment.area}
-                  title={currentApartment.title}
-                  rooms={currentApartment.rooms}
-                  bathrooms={currentApartment.bathrooms}
-                  extra={currentApartment.extra}
-                />
+                <Card {...currentApartment} />
               </div>
             </div>
 

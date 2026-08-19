@@ -112,6 +112,56 @@
 .featuredCardWrapper .card {
   width: 100%;
   max-width: 100%;
+  background-color: #f3efe7;
+  box-shadow: 0 4px 14px rgba(43, 48, 58, 0.12);
+}
+
+.welcome .featuredCardWrapper .cardImg {
+  filter: brightness(0.9) saturate(0.92);
+}
+
+.welcome .featuredCardWrapper .cardPrice {
+  background-color: #9b792f;
+}
+
+.welcome .featuredCardWrapper .cardInfo {
+  padding: 18px 20px 20px;
+  background-color: #f3efe7;
+}
+
+.welcome .featuredCardWrapper .cardTitle {
+  margin-bottom: 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  line-height: 1.15;
+  color: #2b303a;
+}
+
+.welcome .featuredCardWrapper .cardDetails {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px 14px;
+  align-items: start;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #68707a;
+}
+
+.welcome .featuredCardWrapper .cardDetails span:nth-child(-n + 2) {
+  padding: 4px 9px;
+  border-radius: 6px;
+  background-color: #f7f1e5;
+  color: #8f681f;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.welcome .featuredCardWrapper .cardDetails span:last-child {
+  grid-column: 1 / -1;
+  padding-top: 5px;
+  border-top: 1px solid rgba(214, 151, 39, 0.2);
+  color: #59616d;
 }
 
 .welcomeActionsPanel {
