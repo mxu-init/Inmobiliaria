@@ -1,8 +1,8 @@
-import "./Apartaments.css";
-import ApartmentCard from "../../components/ApartmentCards";
+import "./Apartments.css";
+import ApartmentCard from "../../components/ApartmentCards.jsx";
 import apartments from "./apartmentsData.js";
 
-function Apartaments() {
+function Apartments() {
     return (
         <section id="apartments" className="apartments">
             <div className="sectionContainer apartamentsContainer">
@@ -21,4 +21,4 @@ function Apartaments() {
     );
 }
 
-export default Apartaments;
+export default Apartments;
