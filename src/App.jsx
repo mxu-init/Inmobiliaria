@@ -6,7 +6,8 @@ import Apartments from "./pages/apartments/Apartments";
 import Welcome from "./pages/welcome/Welcome";
 import History from "./pages/history/History";
 import Agentes from "./pages/agents/Agentes";
-// PENDIENTE DE PÁGINA RECETAS, SE DEBE PONER TANTO EN IMPORT COMO EN ROUTES
+
+import ContactSection from "./pages/contact/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/pisos" element={<Apartments />} />
           <Route path="/historia" element={<History />} />
           <Route path="/agentes" element={<Agentes />} />
+          <Route path="/contacto" element={<ContactSection />} />
           {/* <Route path="/recetas" element={<Recetas />} /> */}
         </Routes>
       </main>
