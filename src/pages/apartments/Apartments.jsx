@@ -1,6 +1,6 @@
 import "./Apartments.css";
 import ApartmentCard from "../../components/ApartmentCards.jsx";
-import apartments from "./apartmentsData.js";
+import apartments from "../../data/apartmentsData.js";
 
 function Apartments() {
     return (
