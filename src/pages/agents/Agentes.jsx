@@ -1,5 +1,5 @@
 import React from 'react';
-import { agentes } from './agentesData'; 
+import { agentes } from '../../data/agentesData'; 
 import './Agentes.css';
 
 const Agentes = () => {
