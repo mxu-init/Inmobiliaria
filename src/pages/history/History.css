@@ -1,10 +1,3 @@
-.historyText {
-  max-width: 760px;
-  color: var(--color-ink-light);
-  font-size: 1.05rem;
-  margin-bottom: 56px;
-}
-
 .statsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -13,21 +6,22 @@
 }
 
 .statItem {
-  background-color: var(--color-white);
+  background-color: var(--colorWhite);
   border-radius: var(--radius);
   padding: 28px 16px;
   box-shadow: var(--shadow);
+  border: 1px solid var(--colorLine);
 }
 
 .statValue {
   display: block;
-  font-family: var(--font-display);
+  font-family: var(--fontDisplay);
   font-size: 2rem;
   font-weight: 700;
-  color: var(--color-stone);
+  color: var(--colorStone);
 }
 
 .statLabel {
-  color: var(--color-ink-light);
+  color: var(--colorInkLight);
   font-size: 0.9rem;
 }

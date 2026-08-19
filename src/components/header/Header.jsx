@@ -20,7 +20,6 @@ const Header = () => {
     { to: "/historia", label: "Historia" },
     { to: "/agentes", label: "Agentes" },
     { to: "/recetas", label: "Recetas" },
-    
   ];
 
   return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Card from "../../components/ApartmentCards";
+import Card from "../../components/ApartmentCard";
 import apartments from "../../data/apartmentsData.js";
 import "./Welcome.css";
 
@@ -29,13 +29,13 @@ function Welcome() {
       <div className="welcomeWrapper">
         <div className="welcomeContainer">
           <p className="kicker">Bienvenido a</p>
-          <h1 className="welcomeBrand">
+          <h1 className="displayTitle">
             Coliving<span>Campus</span>
           </h1>
-          <h2 className="welcomeSubtitle">
+          <h2 className="subTitle">
             Encuentra tu hogar ideal como estudiante
           </h2>
-          <p className="welcomeText">
+          <p className="bodyText">
             Te ayudamos a encontrar el piso compartido perfecto, cerca de tu
             facultad y con la mejor compañía. Sin líos, sin sorpresas.
           </p>

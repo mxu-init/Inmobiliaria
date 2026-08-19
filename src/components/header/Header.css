@@ -4,9 +4,10 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #ffffff;
+  background-color: var(--colorWhite);
   transition: all 0.3s ease-in-out;
   padding: 20px 0;
+  border-bottom: 1px solid rgba(35, 42, 66, 0.08);
 }
 
 .navbarScrolled {
@@ -25,18 +26,18 @@
 
 .navbarLogo {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .navbarLogo .logoColiving {
-  font-family: serif;
-  color: #9e8726;
+  font-family: var(--fontDisplay);
+  color: var(--colorStone);
 }
 
 .navbarLogo .logoCampus {
-  font-family: sans-serif;
-  font-weight: normal;
-  color: #111827;
+  font-family: var(--fontBody);
+  font-weight: 600;
+  color: var(--colorDusk);
 }
 
 .navbarLinks {
@@ -49,7 +50,7 @@
     gap: 32px;
     font-size: 0.875rem;
     font-weight: 500;
-    color: #374151;
+    color: var(--colorDuskLight);
     align-items: center;
   }
 }
@@ -64,31 +65,31 @@
 
 .navbarLinks a:hover,
 .navbarLinks a.active {
-  color: #c3a71f;
+  color: var(--colorStone);
 }
 
 .navbarLinks a.active {
-  border-bottom-color: #c3a71f;
+  border-bottom-color: var(--colorStone);
 }
 
 .navbarBtn {
-  background-color: #9e8726;
-  color: #ffffff;
+  background-color: var(--colorStone);
+  color: var(--colorWhite);
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 999px;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
   display: inline-block;
 }
 
 .navbarBtn:hover {
-  background-color: #d7b718;
+  background-color: var(--colorStoneDark);
+  box-shadow: 0 10px 20px rgba(150, 105, 30, 0.18);
 }
 
-
 .navbarBtn.active {
-  background-color: #111827;
-  color: #ffffff;
+  background-color: var(--colorDusk);
+  color: var(--colorWhite);
 }

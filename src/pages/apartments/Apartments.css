@@ -1,88 +1,88 @@
 .apartments {
-    background-color: var(--color-paper-alt);
+  background-color: var(--colorPaperAlt);
 }
 
-.apartmentsContainer {
-    padding: 40px;
+.apartmentsHeader {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.apartmentsHeader .sectionTitle {
+  margin-bottom: 12px;
+}
+
+.apartmentsHeader .sectionSubtitle {
+  margin-bottom: 0;
 }
 
 .apartmentsGrid {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 24px 48px;
 }
 
 .card {
-    width: 400px;
-    border-radius: 12px;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    font-family: sans-serif;
+  width: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--colorWhite);
+  box-shadow: var(--shadow);
+  font-family: var(--fontBody);
+  border: 1px solid var(--colorLine);
 }
 
 .cardImage {
-    position: relative;
-    width: 100%;
-    height: 250px;
+  position: relative;
+  width: 100%;
+  height: 250px;
 }
 
 .cardImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .cardPrice {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background-color: #b08d3d;
-    color: white;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: bold;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: var(--colorStone);
+  color: var(--colorWhite);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .cardInfo {
-    padding: 16px;
+  padding: 16px;
 }
 
 .cardArea {
-    color: #b08d3d;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin: 0 0 6px 6px;
-    font-weight: 600;
+  color: var(--colorStone);
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 0 6px 6px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .cardTitle {
-    margin: 0 0 12px 0;
-    font-size: 18px;
-    color: #222;
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: var(--colorDusk);
+  font-family: var(--fontDisplay);
 }
 
 .cardDetails {
-    display: flex;
-    gap: 12px;
-    font-size: 13px;
-    color: #666;
-}
-
-.apartmentsLabel {
-    color: #b08d3d;
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 0 0 8px 0;
-}
-
-.apartmentsSubtitle {
-    color: #666;
-    font-size: 15px;
-    margin: 0 0 32px 0;
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--colorInkLight);
 }
