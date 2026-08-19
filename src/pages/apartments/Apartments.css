@@ -2,7 +2,7 @@
     background-color: var(--color-paper-alt);
 }
 
-.apartamentsContainer {
+.apartmentsContainer {
     padding: 40px;
 }
 
@@ -72,7 +72,7 @@
     color: #666;
 }
 
-.apartamentsLabel {
+.apartmentsLabel {
     color: #b08d3d;
     font-size: 32px;
     font-weight: 600;
@@ -81,7 +81,7 @@
     margin: 0 0 8px 0;
 }
 
-.apartamentsSubtitle {
+.apartmentsSubtitle {
     color: #666;
     font-size: 15px;
     margin: 0 0 32px 0;
