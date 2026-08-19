@@ -6,13 +6,13 @@
   z-index: 1000;
   background-color: var(--colorWhite);
   transition: all 0.3s ease-in-out;
-  padding: 20px 0;
+  padding: 24px 0;
   border-bottom: 1px solid rgba(35, 42, 66, 0.08);
 }
 
 .navbarScrolled {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
-  padding: 12px 0;
+  padding: 16px 0;
 }
 
 .navbarContent {

@@ -4,9 +4,9 @@
 
 .apartmentsHeader {
   max-width: 760px;
-  margin: 0 auto 48px;
+  margin: 0 auto 40px;
   text-align: center;
-  padding: 0 24px;
+  padding: 24px 24px 0;
 }
 
 .apartmentsHeader .sectionTitle {
@@ -19,7 +19,7 @@
 
 .apartmentsGrid {
   display: flex;
-  gap: 40px;
+  gap: 32px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 24px 48px;
@@ -61,20 +61,20 @@
 }
 
 .cardInfo {
-  padding: 16px;
+  padding: 20px;
 }
 
 .cardArea {
   color: var(--colorStone);
   font-size: 12px;
   text-transform: uppercase;
-  margin: 0 0 6px 6px;
+  margin: 0 0 8px 6px;
   font-weight: 700;
   letter-spacing: 0.08em;
 }
 
 .cardTitle {
-  margin: 0 0 12px 0;
+  margin: 0 0 14px 0;
   font-size: 18px;
   color: var(--colorDusk);
   font-family: var(--fontDisplay);
