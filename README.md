@@ -25,6 +25,15 @@ El objetivo principal de **Coliving Campus** es conectar a estudiantes con aloja
 
 El proyecto está construido sobre las herramientas más modernas del ecosistema JavaScript/React:
 
+| Categoría | Tecnologías y Herramientas |
+| :--- | :--- |
+| **Frontend & Core** | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) |
+| **Routing & Networking** | ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white) |
+| **Build & Tooling** | ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) |
+| **Control de Versiones** | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) |
+
+<br />
+
 | Tecnología / Librería | Versión | Propósito en el Proyecto |
 | :--- | :--- | :--- |
 | **[React](https://react.dev/)** | `^19.2.7` | Biblioteca principal para la creación de interfaces de usuario basadas en componentes declarativos y reutilizables. |
