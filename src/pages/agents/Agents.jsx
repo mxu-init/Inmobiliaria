@@ -6,8 +6,13 @@ const Agents = () => {
     <section id="agents" className="agentsSection">
       <div className="agentsHeader">
         <p className="kicker">Nuestro equipo</p>
-        <h2 className="sectionTitle">Conoce a nuestros agentes</h2>
-         <p className="bodyText">Un equipo cercano que te acompaña en cada paso para encontrar tu piso ideal.</p>
+        <h2 className="sectionTitle">
+          Conoce a nuestros<span> agentes</span>
+        </h2>
+        <p className="bodyText">
+          Un equipo cercano que te acompaña en cada paso para encontrar tu piso
+          ideal.
+        </p>
       </div>
 
       <div className="agentsGrid">

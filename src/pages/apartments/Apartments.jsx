@@ -6,7 +6,7 @@ function Apartments() {
     return (
         <section id="apartments" className="apartments">
             <div className="apartmentsHeader">
-                <h2 className="sectionTitle">Nuestra oferta</h2>
+                <h2 className="sectionTitle">Nuestra <span>oferta</span></h2>
                 <p className="sectionSubtitle">
                     Descubre nuestros hermosos apartamentos en la ciudad.
                 </p>
