@@ -7,6 +7,7 @@ import Apartments from "./pages/apartments/Apartments";
 import Welcome from "./pages/welcome/Welcome";
 import History from "./pages/history/History";
 import Agents from "./pages/agents/Agents";
+import Recipes from "./pages/recipes/Recipes";
 import ContactSection from "./pages/contact/Contact";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/pisos" element={<Apartments />} />
           <Route path="/historia" element={<History />} />
           <Route path="/agentes" element={<Agents />} />
+          <Route path="/recetas" element={<Recipes />} />
           <Route path="/contacto" element={<ContactSection />} />
         </Routes>
       </main>
