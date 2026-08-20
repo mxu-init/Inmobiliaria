@@ -1,40 +1,30 @@
-import { agents } from "./agentsData";
+import agents from '../../data/agentsData';
+import AgentCard from '../../components/AgentCard';
 import "./Agents.css";
 
-const Agents = () => {
+function Agents() {
   return (
-    <section id="agents" className="agentsSection">
-      <div className="agentsHeader">
+    <section id="agentes" className="agents">
+      <div className="sectionContainer">
         <p className="kicker">Nuestro equipo</p>
-        <h2 className="sectionTitle">
-          Conoce a nuestros<span> agentes</span>
-        </h2>
-        <p className="bodyText">
-          Un equipo cercano que te acompaña en cada paso para encontrar tu piso
-          ideal.
+        <h2>Conoce a nuestros agentes</h2>
+        <p className="sectionSubtitle">
+          Un equipo cercano que te acompaña en cada paso para encontrar tu piso ideal.
         </p>
-      </div>
-
-      <div className="agentsGrid">
-        {agents.map((agent) => (
-          <div className="agentCard" key={agent.id}>
-            <div
-              className="agentAvatar"
-              style={{ backgroundColor: agent.circleColor }}
-            >
-              {agent.initials}
-            </div>
-
-            <h3>{agent.name}</h3>
-            <span className="agentRole">Cargo: {agent.role}</span>
-            <p className="agentDescription">
-              <strong>Descripción:</strong> {agent.description}
-            </p>
-          </div>
-        ))}
+        <div className="agentsGrid">
+          {agents.map((agent) => (
+            <AgentCard
+              key={agent.id}
+              name={agent.name}
+              role={agent.role}
+              bio={agent.bio}
+              photo={agent.photo}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
-};
+}
 
 export default Agents;
