@@ -3,8 +3,10 @@
 > **Coliving Campus** es una aplicación web moderna desarrollada con **React** y **Vite**, diseñada para facilitar la búsqueda, gestión y exploración de pisos compartidos y espacios de coliving para estudiantes y jóvenes profesionales. Ofrece una experiencia de usuario interactiva, fluida y totalmente adaptable a cualquier dispositivo.
 
 <p align="center">
-  <img width="1898" height="875" alt="Coliving Campus Preview" src="https://github.com/user-attachments/assets/3f230f62-bce2-4334-b779-54ea9b05d7f9" />
+  <img width="1920" height="877" alt="Coliving Campus Preview" src="https://github.com/user-attachments/assets/83b1e554-9f9a-4110-8461-4241918d3276" />
 </p>
+
+
 
 ---
 
