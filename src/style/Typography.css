@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap");
+
+:root {
+  --fontDisplay: "Playfair Display", serif;
+  --fontBody: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--fontBody);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fontDisplay);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--colorDusk);
+}
+
+.displayTitle {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0 0 24px 0;
+  line-height: 1.05;
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 18px 0;
+}
+
+.sectionTitle span {
+  color: var(--colorStone);
+}
+
+.subTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--colorDusk);
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.bodyText {
+  color: var(--colorInkLight);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.kicker {
+  font-family: var(--fontDisplay);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--colorStoneDark);
+  font-size: 1.05rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.sectionSubtitle {
+  color: var(--colorInkLight);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 560px;
+  margin-inline: auto;
+  margin-top: 12px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.kicker::after {
+  content: "";
+  width: 36px;
+  height: 1px;
+  background-color: var(--colorStone);
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: var(--fontBody);
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btnPrimary {
+  background-color: var(--colorStone);
+  color: var(--colorWhite);
+  border: 1px solid var(--colorStone);
+}
+
+.btnPrimary:hover {
+  background-color: var(--colorStoneDark);
+  box-shadow: 0 8px 20px rgba(192, 136, 41, 0.35);
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: var(--colorDusk);
+  border: 2px solid var(--colorDusk);
+}
+
+.btnSecondary:hover {
+  background-color: var(--colorDusk);
+  color: var(--colorWhite);
+}
+
+.btnSmall {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+}

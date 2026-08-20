@@ -12,8 +12,8 @@ function History() {
     <section id="aboutUs" className="history">
       <div className="sectionContainer">
         <p className="kicker">Sobre nosotros</p>
-        <h2>Nuestra historia</h2>
-        <p className="historyText">
+        <h2 className="sectionTitle">Nuestra <span>historia</span></h2>
+        <p className="bodyText">
           Desde 2015, en Coliving Campus nos dedicamos a conectar a estudiantes con
           pisos compartidos de calidad en Salamanca. Lo que empezó como un
           pequeño proyecto entre amigos que sabían lo difícil que es

@@ -4,15 +4,15 @@ export const Contact = () => {
   return (
     <section className="contactWelcome">
       <div className="contactContainer">
-        <span className="contactKicker">Estamos aquí para ti</span>
+         <p className="kicker">Estamos aquí para ti</p>
 
-        <h1 className="contactTitle">
-          Contác<span>tanos</span>
-        </h1>
+         <h1 className="displayTitle">
+           Contác<span>tanos</span>
+         </h1>
 
-        <h2 className="contactSubtitle">¿Tienes dudas o necesitas ayuda?</h2>
+         <h2 className="subTitle">¿Tienes dudas o necesitas ayuda?</h2>
 
-        <p className="contactDescription">
+         <p className="bodyText">
           Nuestro equipo está listo para ayudarte. Escríbenos, llámanos o
           visítanos. ¡Será un gusto atenderte!
         </p>
