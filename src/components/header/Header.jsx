@@ -19,7 +19,7 @@ const Header = () => {
     { to: "/pisos", label: "Pisos" },
     { to: "/historia", label: "Historia" },
     { to: "/agentes", label: "Agentes" },
-    { to: "/recetas", label: "Recetas" },
+    { to: "/menu", label: "Menu" },
     
   ];
 

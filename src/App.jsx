@@ -6,6 +6,7 @@ import Apartments from "./pages/apartments/Apartments";
 import Welcome from "./pages/welcome/Welcome";
 import History from "./pages/history/History";
 import Agentes from "./pages/agents/Agentes";
+import Menu from "./pages/menu/Menu";
 
 import ContactSection from "./pages/contact/Contact";
 
@@ -20,7 +21,7 @@ function App() {
           <Route path="/historia" element={<History />} />
           <Route path="/agentes" element={<Agentes />} />
           <Route path="/contacto" element={<ContactSection />} />
-          {/* <Route path="/recetas" element={<Recetas />} /> */}
+           <Route path="/menu" element={<Menu />} />
         </Routes>
       </main>
       <Footer />
