@@ -9,7 +9,7 @@ function MenuCard(props) {
                     src={props.image}
                     alt={props.name}
                 />
-                {/* <span className="menuCardBadge">{props.area}</span> */}
+                
             </div>
             <div className="menuCardInfo">
                 <h3 className="menuCardTitle">{props.name}</h3>
